@@ -1,8 +1,4 @@
 function superbowlWin(array) {
-    function win(array) {
-        if (array.result === 'W'){
-            return array.year;
-        }
-    }
-    array.find(win);
+    const sbWin = array.find(object => object.result === 'W');
+    return (!!sbWin ? sbWin.year : undefined)
 }
